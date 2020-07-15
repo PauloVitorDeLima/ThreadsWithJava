@@ -10,43 +10,44 @@ import java.util.stream.Stream;
 public class MainGetProperty {
 	public static void main(String[] args) {
 	
-		System.out.println("Pasta padrão do usuário:				" + System.getProperty("user.home"));
+		System.out.println("Pasta padrï¿½o do usuï¿½rio:				" + System.getProperty("user.home"));
 		System.out.println("Caractere separador de arquivo:			" + System.getProperty("file.separator"));
 		System.out.println("Caractere separador de caminhos:		" + System.getProperty("path.separator"));
-		System.out.println("Usuário que está rodando o aplicativo:	" + System.getProperty("user.name"));
-		System.out.println("Caminho do diretório temp:				" + System.getProperty("java.io.tmpdir"));
+		System.out.println("Usuï¿½rio que estï¿½ rodando o aplicativo:	" + System.getProperty("user.name"));
+		System.out.println("Caminho do diretï¿½rio temp:				" + System.getProperty("java.io.tmpdir"));
 				
-		System.out.println("Versão do JRE:							" + System.getProperty("java.version"));
-		System.out.println("Versão da especificação do JRE:			" + System.getProperty("java.specification.version"));
-		System.out.println("Versão da JVM:							" + System.getProperty("java.vm.specification.version"));
-		System.out.println("Versão da implementação da JVM:			" + System.getProperty("java.vm.version"));
-		System.out.println("Diretório de instalação do Java:		" + System.getProperty("java.home"));
+		System.out.println("Versï¿½o do JRE:							" + System.getProperty("java.version"));
+		System.out.println("Versï¿½o da especificaï¿½ï¿½o do JRE:			" + System.getProperty("java.specification.version"));
+		System.out.println("Versï¿½o da JVM:							" + System.getProperty("java.vm.specification.version"));
+		System.out.println("Versï¿½o da implementaï¿½ï¿½o da JVM:			" + System.getProperty("java.vm.version"));
+		System.out.println("Diretï¿½rio de instalaï¿½ï¿½o do Java:		" + System.getProperty("java.home"));
 		System.out.println("Caminho das bibliotecas (library):		" + System.getProperty("java.library.path"));
 		
-		System.out.println("Pasta de onde foi lançado o aplicativo:	" + System.getProperty("user.dir"));
+		System.out.println("Pasta de onde foi lanï¿½ado o aplicativo:	" + System.getProperty("user.dir"));
 		System.out.println("Caminho das classes do aplicativo:		" + System.getProperty("java.class.path"));
 		System.out.println("Nome do SO:								" + System.getProperty("os.name"));
 		System.out.println("Arquitetura do SO:						" + System.getProperty("os.arch"));
-		System.out.println("Versão do SO:							" + System.getProperty("os.version"));
-	
+		System.out.println("Versï¿½o do SO:							" + System.getProperty("os.version"));
+		
+		System.out.println("Teste de Branch");
 		
 		/*Path pathDir = Paths.get("C:\\Users\\Public\\Downloads\\NovaPasta");
 		System.out.println("Caminho para downloads publicos: 	"+ pathDir);
 		boolean pathExists = Files.exists(pathDir);
 		try {
 		if(!pathExists) {
-			System.out.println("O caminho não existe e será criado!");
+			System.out.println("O caminho nï¿½o existe e serï¿½ criado!");
 			Path novoDir = Files.createDirectories(pathDir);
 		}else {
 
-			System.out.println("O caminho existe e será criado um arquivo");
+			System.out.println("O caminho existe e serï¿½ criado um arquivo");
 		}
 		}catch(IOException e){
 		
 			e.printStackTrace();
 		}
 		*/
-		Path start = Paths.get("C:\\Users\\2018100856\\OneDrive - Complexo de Ensino Superior do Brasil LTDA\\Prática de Sistemas de Informação");
+		Path start = Paths.get("C:\\Users\\2018100856\\OneDrive - Complexo de Ensino Superior do Brasil LTDA\\Prï¿½tica de Sistemas de Informaï¿½ï¿½o");
 		int maxDepth = 5;
 		try {
 			Stream<Path> stream = Files.find(
